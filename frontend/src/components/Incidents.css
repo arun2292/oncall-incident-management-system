@@ -1,0 +1,47 @@
+.incident-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.incident-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.incident-description {
+  margin: 1rem 0;
+  color: #555;
+}
+
+.incident-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.escalation-history {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff3cd;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.escalation-history ul {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.incident-actions {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+

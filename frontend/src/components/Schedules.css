@@ -1,0 +1,43 @@
+.schedule-form {
+  margin-top: 1.5rem;
+}
+
+.rotation-entry {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr auto;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.rotation-entry select,
+.rotation-entry input {
+  padding: 0.5rem;
+}
+
+.schedule-info {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.rotation-details {
+  margin-top: 1rem;
+}
+
+.rotation-details h4 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.rotation-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
