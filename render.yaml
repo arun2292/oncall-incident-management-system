@@ -1,0 +1,21 @@
+# Render deployment configuration for backend (Node web service) and frontend (Static site)
+
+services:
+  - type: web
+    name: oncall-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm run start
+    # Render will provide PORT to the process automatically; do not override it here
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+static_sites:
+  - name: oncall-frontend
+    branch: main
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/build
+    plan: free
+    envVars: []
